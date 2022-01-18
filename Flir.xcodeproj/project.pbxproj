@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		140E8DB92796612400EAFEF7 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E8DB82796612400EAFEF7 /* AppManager.swift */; };
+		140E8DBB2796615400EAFEF7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E8DBA2796615400EAFEF7 /* LoginView.swift */; };
+		140E8DBD2796620900EAFEF7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E8DBC2796620900EAFEF7 /* LoginViewModel.swift */; };
+		14206E392796438100FB6CE6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14206E382796438100FB6CE6 /* GoogleService-Info.plist */; };
+		14206E3C2796452A00FB6CE6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 14206E3B2796452A00FB6CE6 /* FirebaseAnalytics */; };
+		14206E3E2796452A00FB6CE6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 14206E3D2796452A00FB6CE6 /* FirebaseAuth */; };
+		14206E402796452A00FB6CE6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 14206E3F2796452A00FB6CE6 /* FirebaseFirestore */; };
+		C3D165E2274ED888000C74AB /* PlacesDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D165E1274ED888000C74AB /* PlacesDataTest.swift */; };
+		C3D165E5274FD1D7000C74AB /* DefaultColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D165E4274FD1D6000C74AB /* DefaultColorTheme.swift */; };
+		C3E3E220274D176D00215FA8 /* FlirApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E3E21F274D176D00215FA8 /* FlirApp.swift */; };
+		C3E3E222274D176D00215FA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E3E221274D176D00215FA8 /* ContentView.swift */; };
+		C3E3E224274D176E00215FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3E3E223274D176E00215FA8 /* Assets.xcassets */; };
+		C3E3E227274D176E00215FA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3E3E226274D176E00215FA8 /* Preview Assets.xcassets */; };
+		C3E3E231274D176E00215FA8 /* FlirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E3E230274D176E00215FA8 /* FlirTests.swift */; };
+		C3E3E23B274D176E00215FA8 /* FlirUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E3E23A274D176E00215FA8 /* FlirUITests.swift */; };
+		C3E3E23D274D176E00215FA8 /* FlirUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E3E23C274D176E00215FA8 /* FlirUITestsLaunchTests.swift */; };
+		C3E3E24D274D188400215FA8 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E3E24C274D188400215FA8 /* Repo.swift */; };
+		C3E3E251274D195300215FA8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E3E250274D195300215FA8 /* Home.swift */; };
+		C3E3E253274D198400215FA8 /* ReposView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E3E252274D198400215FA8 /* ReposView.swift */; };
+		C3E3E256274D19E400215FA8 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C3E3E255274D19E400215FA8 /* SDWebImageSwiftUI */; };
+		C3E3E258274D1A0A00215FA8 /* RepoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E3E257274D1A0A00215FA8 /* RepoDetailView.swift */; };
+		C3E3E25A274D1B5500215FA8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E3E259274D1B5500215FA8 /* HomeViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3E3E22D274D176E00215FA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3E3E214274D176D00215FA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3E3E21B274D176D00215FA8;
+			remoteInfo = Svea;
+		};
+		C3E3E237274D176E00215FA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3E3E214274D176D00215FA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3E3E21B274D176D00215FA8;
+			remoteInfo = Svea;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		140E8DB82796612400EAFEF7 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		140E8DBA2796615400EAFEF7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		140E8DBC2796620900EAFEF7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		14206E382796438100FB6CE6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C3D165E1274ED888000C74AB /* PlacesDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDataTest.swift; sourceTree = "<group>"; };
+		C3D165E4274FD1D6000C74AB /* DefaultColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultColorTheme.swift; sourceTree = "<group>"; };
+		C3E3E21C274D176D00215FA8 /* Flir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E3E21F274D176D00215FA8 /* FlirApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlirApp.swift; sourceTree = "<group>"; };
+		C3E3E221274D176D00215FA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C3E3E223274D176E00215FA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3E3E226274D176E00215FA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3E3E22C274D176E00215FA8 /* FlirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E3E230274D176E00215FA8 /* FlirTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlirTests.swift; sourceTree = "<group>"; };
+		C3E3E236274D176E00215FA8 /* FlirUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlirUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E3E23A274D176E00215FA8 /* FlirUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlirUITests.swift; sourceTree = "<group>"; };
+		C3E3E23C274D176E00215FA8 /* FlirUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlirUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3E3E24C274D188400215FA8 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		C3E3E250274D195300215FA8 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C3E3E252274D198400215FA8 /* ReposView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposView.swift; sourceTree = "<group>"; };
+		C3E3E257274D1A0A00215FA8 /* RepoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailView.swift; sourceTree = "<group>"; };
+		C3E3E259274D1B5500215FA8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3E3E219274D176D00215FA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14206E3C2796452A00FB6CE6 /* FirebaseAnalytics in Frameworks */,
+				14206E402796452A00FB6CE6 /* FirebaseFirestore in Frameworks */,
+				14206E3E2796452A00FB6CE6 /* FirebaseAuth in Frameworks */,
+				C3E3E256274D19E400215FA8 /* SDWebImageSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E3E229274D176E00215FA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E3E233274D176E00215FA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		140E8DB72796610700EAFEF7 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				140E8DB82796612400EAFEF7 /* AppManager.swift */,
+				140E8DBA2796615400EAFEF7 /* LoginView.swift */,
+				140E8DBC2796620900EAFEF7 /* LoginViewModel.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
+		C3D165E3274FD1B7000C74AB /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				C3D165E4274FD1D6000C74AB /* DefaultColorTheme.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		C3E3E213274D176D00215FA8 = {
+			isa = PBXGroup;
+			children = (
+				C3E3E21E274D176D00215FA8 /* Flir */,
+				C3E3E22F274D176E00215FA8 /* Flirests */,
+				C3E3E239274D176E00215FA8 /* FlirUITests */,
+				C3E3E21D274D176D00215FA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3E3E21D274D176D00215FA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3E3E21C274D176D00215FA8 /* Flir.app */,
+				C3E3E22C274D176E00215FA8 /* FlirTests.xctest */,
+				C3E3E236274D176E00215FA8 /* FlirUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3E3E21E274D176D00215FA8 /* Flir */ = {
+			isa = PBXGroup;
+			children = (
+				140E8DB72796610700EAFEF7 /* Combine */,
+				14206E382796438100FB6CE6 /* GoogleService-Info.plist */,
+				C3D165E3274FD1B7000C74AB /* Styles */,
+				C3E3E24A274D182500215FA8 /* Model */,
+				C3E3E24B274D182D00215FA8 /* View */,
+				C3E3E249274D181400215FA8 /* ViewModel */,
+				C3E3E21F274D176D00215FA8 /* FlirApp.swift */,
+				C3E3E221274D176D00215FA8 /* ContentView.swift */,
+				C3E3E223274D176E00215FA8 /* Assets.xcassets */,
+				C3E3E225274D176E00215FA8 /* Preview Content */,
+			);
+			path = Flir;
+			sourceTree = "<group>";
+		};
+		C3E3E225274D176E00215FA8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C3E3E226274D176E00215FA8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C3E3E22F274D176E00215FA8 /* Flirests */ = {
+			isa = PBXGroup;
+			children = (
+				C3E3E230274D176E00215FA8 /* FlirTests.swift */,
+				C3D165E1274ED888000C74AB /* PlacesDataTest.swift */,
+			);
+			name = Flirests;
+			path = FlirTests;
+			sourceTree = "<group>";
+		};
+		C3E3E239274D176E00215FA8 /* FlirUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3E3E23A274D176E00215FA8 /* FlirUITests.swift */,
+				C3E3E23C274D176E00215FA8 /* FlirUITestsLaunchTests.swift */,
+			);
+			path = FlirUITests;
+			sourceTree = "<group>";
+		};
+		C3E3E249274D181400215FA8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C3E3E259274D1B5500215FA8 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C3E3E24A274D182500215FA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3E3E24C274D188400215FA8 /* Repo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3E3E24B274D182D00215FA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3E3E250274D195300215FA8 /* Home.swift */,
+				C3E3E252274D198400215FA8 /* ReposView.swift */,
+				C3E3E257274D1A0A00215FA8 /* RepoDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3E3E21B274D176D00215FA8 /* Flir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3E3E240274D176E00215FA8 /* Build configuration list for PBXNativeTarget "Flir" */;
+			buildPhases = (
+				C3E3E218274D176D00215FA8 /* Sources */,
+				C3E3E219274D176D00215FA8 /* Frameworks */,
+				C3E3E21A274D176D00215FA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flir;
+			packageProductDependencies = (
+				C3E3E255274D19E400215FA8 /* SDWebImageSwiftUI */,
+				14206E3B2796452A00FB6CE6 /* FirebaseAnalytics */,
+				14206E3D2796452A00FB6CE6 /* FirebaseAuth */,
+				14206E3F2796452A00FB6CE6 /* FirebaseFirestore */,
+			);
+			productName = Svea;
+			productReference = C3E3E21C274D176D00215FA8 /* Flir.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3E3E22B274D176E00215FA8 /* FlirTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3E3E243274D176E00215FA8 /* Build configuration list for PBXNativeTarget "FlirTests" */;
+			buildPhases = (
+				C3E3E228274D176E00215FA8 /* Sources */,
+				C3E3E229274D176E00215FA8 /* Frameworks */,
+				C3E3E22A274D176E00215FA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3E3E22E274D176E00215FA8 /* PBXTargetDependency */,
+			);
+			name = FlirTests;
+			productName = SveaTests;
+			productReference = C3E3E22C274D176E00215FA8 /* FlirTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3E3E235274D176E00215FA8 /* FlirUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3E3E246274D176E00215FA8 /* Build configuration list for PBXNativeTarget "FlirUITests" */;
+			buildPhases = (
+				C3E3E232274D176E00215FA8 /* Sources */,
+				C3E3E233274D176E00215FA8 /* Frameworks */,
+				C3E3E234274D176E00215FA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3E3E238274D176E00215FA8 /* PBXTargetDependency */,
+			);
+			name = FlirUITests;
+			productName = SveaUITests;
+			productReference = C3E3E236274D176E00215FA8 /* FlirUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3E3E214274D176D00215FA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					C3E3E21B274D176D00215FA8 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					C3E3E22B274D176E00215FA8 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = C3E3E21B274D176D00215FA8;
+					};
+					C3E3E235274D176E00215FA8 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = C3E3E21B274D176D00215FA8;
+					};
+				};
+			};
+			buildConfigurationList = C3E3E217274D176D00215FA8 /* Build configuration list for PBXProject "Flir" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3E3E213274D176D00215FA8;
+			packageReferences = (
+				C3E3E254274D19E400215FA8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				14206E3A2796452A00FB6CE6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = C3E3E21D274D176D00215FA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3E3E21B274D176D00215FA8 /* Flir */,
+				C3E3E22B274D176E00215FA8 /* FlirTests */,
+				C3E3E235274D176E00215FA8 /* FlirUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3E3E21A274D176D00215FA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E3E227274D176E00215FA8 /* Preview Assets.xcassets in Resources */,
+				C3E3E224274D176E00215FA8 /* Assets.xcassets in Resources */,
+				14206E392796438100FB6CE6 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E3E22A274D176E00215FA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E3E234274D176E00215FA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3E3E218274D176D00215FA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E3E253274D198400215FA8 /* ReposView.swift in Sources */,
+				C3D165E5274FD1D7000C74AB /* DefaultColorTheme.swift in Sources */,
+				140E8DBD2796620900EAFEF7 /* LoginViewModel.swift in Sources */,
+				C3E3E24D274D188400215FA8 /* Repo.swift in Sources */,
+				C3E3E25A274D1B5500215FA8 /* HomeViewModel.swift in Sources */,
+				C3E3E222274D176D00215FA8 /* ContentView.swift in Sources */,
+				C3E3E251274D195300215FA8 /* Home.swift in Sources */,
+				140E8DB92796612400EAFEF7 /* AppManager.swift in Sources */,
+				C3E3E258274D1A0A00215FA8 /* RepoDetailView.swift in Sources */,
+				140E8DBB2796615400EAFEF7 /* LoginView.swift in Sources */,
+				C3E3E220274D176D00215FA8 /* FlirApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E3E228274D176E00215FA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E3E231274D176E00215FA8 /* FlirTests.swift in Sources */,
+				C3D165E2274ED888000C74AB /* PlacesDataTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E3E232274D176E00215FA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E3E23B274D176E00215FA8 /* FlirUITests.swift in Sources */,
+				C3E3E23D274D176E00215FA8 /* FlirUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3E3E22E274D176E00215FA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3E3E21B274D176D00215FA8 /* Flir */;
+			targetProxy = C3E3E22D274D176E00215FA8 /* PBXContainerItemProxy */;
+		};
+		C3E3E238274D176E00215FA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3E3E21B274D176D00215FA8 /* Flir */;
+			targetProxy = C3E3E237274D176E00215FA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C3E3E23E274D176E00215FA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3E3E23F274D176E00215FA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3E3E241274D176E00215FA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Flir/Preview Content\"";
+				DEVELOPMENT_TEAM = B637BE2R39;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woqomoqo.Flir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C3E3E242274D176E00215FA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Flir/Preview Content\"";
+				DEVELOPMENT_TEAM = B637BE2R39;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woqomoqo.Flir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C3E3E244274D176E00215FA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B637BE2R39;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woqomoqo.SveaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flir.app/Flir";
+			};
+			name = Debug;
+		};
+		C3E3E245274D176E00215FA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B637BE2R39;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woqomoqo.SveaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flir.app/Flir";
+			};
+			name = Release;
+		};
+		C3E3E247274D176E00215FA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B637BE2R39;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woqomoqo.SveaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Svea;
+			};
+			name = Debug;
+		};
+		C3E3E248274D176E00215FA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B637BE2R39;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woqomoqo.SveaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Svea;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3E3E217274D176D00215FA8 /* Build configuration list for PBXProject "Flir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E3E23E274D176E00215FA8 /* Debug */,
+				C3E3E23F274D176E00215FA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3E3E240274D176E00215FA8 /* Build configuration list for PBXNativeTarget "Flir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E3E241274D176E00215FA8 /* Debug */,
+				C3E3E242274D176E00215FA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3E3E243274D176E00215FA8 /* Build configuration list for PBXNativeTarget "FlirTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E3E244274D176E00215FA8 /* Debug */,
+				C3E3E245274D176E00215FA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3E3E246274D176E00215FA8 /* Build configuration list for PBXNativeTarget "FlirUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E3E247274D176E00215FA8 /* Debug */,
+				C3E3E248274D176E00215FA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		14206E3A2796452A00FB6CE6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		C3E3E254274D19E400215FA8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14206E3B2796452A00FB6CE6 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14206E3A2796452A00FB6CE6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		14206E3D2796452A00FB6CE6 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14206E3A2796452A00FB6CE6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		14206E3F2796452A00FB6CE6 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14206E3A2796452A00FB6CE6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C3E3E255274D19E400215FA8 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3E3E254274D19E400215FA8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C3E3E214274D176D00215FA8 /* Project object */;
+}
