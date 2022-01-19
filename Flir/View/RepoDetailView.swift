@@ -18,7 +18,7 @@ struct GrowingButton: ButtonStyle {
 struct RepoDetailView: View {
     @Binding var isPresented: Bool
     @Binding var selectionIndex: Int
-    @EnvironmentObject var homeData: HomeViewModel
+    @EnvironmentObject var homeData: DataViewModel
     @Environment(\.colorScheme) var colorScheme
     let colorTheme: ColorThemeProtocol = DefaultColorTheme()
     
@@ -72,7 +72,7 @@ struct RepoDetailView: View {
                 minHeight: 0,
                 maxHeight: .infinity
             )
-                .background(LinearGradient(gradient: Gradient(stops: [Gradient.Stop(color: Color(hue: 0.5890869692147497, saturation: 0.7570247420345445, brightness: 0.3924503096614976, opacity: 1.0), location: 0.0), Gradient.Stop(color: Color(hue: 0.6, saturation: 1.0, brightness: 0.12792784909167923, opacity: 1.0), location: 0.507611553485577), Gradient.Stop(color: Color(hue: 0.8346959309405592, saturation: 1.0, brightness: 0.3181611945830196, opacity: 1.0), location: 1.0)]), startPoint: UnitPoint.topLeading, endPoint: UnitPoint.bottomTrailing))
+            .background(colorTheme.gradient)
         }
     }
 }

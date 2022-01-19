@@ -1,36 +1,46 @@
-import SwiftUI
 import Combine
+import SwiftUI
 
 struct LoginView: View {
-    @ObservedObject var vm = LoginViewModel()
+    @ObservedObject var loginViewModel = LoginLogoutViewModel()
     @State var showAlert = false
     let colorTheme: ColorThemeProtocol = DefaultColorTheme()
-    
+
     var body: some View {
         VStack {
             Text("Login")
                 .font(.largeTitle)
                 .bold()
                 .padding(.bottom, 40)
-            
+
             VStack {
-                TextField("Email", text: $vm.email)
+                TextField("Email", text: $loginViewModel.email)
                     .keyboardType(.emailAddress)
                     .textContentType(.emailAddress)
                     .autocapitalization(.none)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
             }
             .padding()
-            
+
             VStack {
-                SecureField("Password", text: $vm.password)
+                SecureField("Password", text: $loginViewModel.password)
                     .textContentType(.password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
             }
             .padding()
-            
+
             Button("Login") {
-                showAlert = !vm.loginUser()
+                Task {
+                    await loginViewModel.loginUser()
+
+                    if loginViewModel.authenticationSucceded == true {
+                        print("ax")
+                        showAlert = false
+                    } else {
+                        print("ox")
+                        showAlert = true
+                    }
+                }
             }
             .padding()
             .frame(width: 100, height: 40, alignment: .center)
@@ -39,7 +49,7 @@ struct LoginView: View {
             .cornerRadius(8)
         }
         .alert(isPresented: $showAlert, content: {
-            Alert(title: Text(vm.errorMessage))
+            Alert(title: Text(loginViewModel.myError))
         })
     }
 }

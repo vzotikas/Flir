@@ -2,8 +2,8 @@ import SDWebImageSwiftUI
 import SwiftUI
 
 struct ReposView: View {
-    @ObservedObject var vm = HomeViewModel()
-    @EnvironmentObject var homeData: HomeViewModel
+    @ObservedObject var logoutViewModel = LoginLogoutViewModel()
+    @EnvironmentObject var repoData: DataViewModel
     @State var showRepoDetailModalView: Bool = false
     @State var selectionIndex: Int = 0
     @Environment(\.colorScheme) var colorScheme
@@ -12,20 +12,20 @@ struct ReposView: View {
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false, content: {
-                if homeData.fetchedReposList.isEmpty {
+                if repoData.fetchedReposList.isEmpty {
                     ProgressView()
                         .padding(.top, 30)
                 }
                 else {
                     // Dispaying Contents...
                     VStack(spacing: 10) {
-                        ForEach(homeData.fetchedReposList.indices) { repoIndex in
+                        ForEach(repoData.fetchedReposList.indices) { repoIndex in
 
                             Button(action: { selectionIndex = repoIndex
                                 showRepoDetailModalView = true
                             }) {
                                 HStack(alignment: .center, spacing: 15) {
-                                    WebImage(url: URL(string: "\(self.homeData.fetchedReposList[repoIndex].avatar_url)"))
+                                    WebImage(url: URL(string: "\(self.repoData.fetchedReposList[repoIndex].avatar_url)"))
                                         .resizable()
                                         .frame(width: 50, height: 50)
                                         .clipShape(Circle())
@@ -33,7 +33,7 @@ struct ReposView: View {
                                         .shadow(radius: 10)
 
                                     HStack(alignment: .center, spacing: 0, content: {
-                                        Text(self.homeData.fetchedReposList[repoIndex].login)
+                                        Text(self.repoData.fetchedReposList[repoIndex].login)
                                             .font(.title3)
                                             .foregroundColor(Color.white)
                                             .fontWeight(.bold)
@@ -44,7 +44,7 @@ struct ReposView: View {
                                 }
                                 .padding()
 //                                .background(colorScheme == .dark ? colorTheme.tertiaryColor : colorTheme.primaryColor)
-                                .background(LinearGradient(gradient: Gradient(stops: [Gradient.Stop(color: Color(hue: 0.5890869692147497, saturation: 0.7570247420345445, brightness: 0.3924503096614976, opacity: 1.0), location: 0.0), Gradient.Stop(color: Color(hue: 0.6, saturation: 1.0, brightness: 0.12792784909167923, opacity: 1.0), location: 0.507611553485577), Gradient.Stop(color: Color(hue: 0.8346959309405592, saturation: 1.0, brightness: 0.3181611945830196, opacity: 1.0), location: 1.0)]), startPoint: UnitPoint.topLeading, endPoint: UnitPoint.bottomTrailing))
+                                .background(colorTheme.gradient)
                                 .cornerRadius(20)
                                 .shadow(color: colorTheme.quaternaryColor, radius: 4)
                             }
@@ -56,7 +56,7 @@ struct ReposView: View {
                     }
                     .padding()
                     Button("Logout") {
-                        vm.logoutUser()
+                        logoutViewModel.logoutUser()
                     }
                     .padding()
                     .frame(width: 100, height: 40, alignment: .center)
@@ -65,16 +65,22 @@ struct ReposView: View {
                     .cornerRadius(8)
                 }
             })
-//                .background(colorTheme.tertiaryColor)
+//            .background(colorTheme.tertiaryColor)
             .navigationTitle("Repos List")
         }
         // Loading Data...
         .onAppear(perform: {
-            if homeData.fetchedReposList.isEmpty {
+            if repoData.fetchedReposList.isEmpty {
                 Task {
-                    await homeData.fetchRepos()
+                    await repoData.fetchRepos()
                 }
             }
         })
     }
 }
+
+//struct ReposView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ReposView()
+//    }
+//}

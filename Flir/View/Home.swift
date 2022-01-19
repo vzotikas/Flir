@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct Home: View {
-    @StateObject var homeData = HomeViewModel()
+    @StateObject var homeData = DataViewModel()
 
     var body: some View {
         ReposView()
