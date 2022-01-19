@@ -97,13 +97,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		140E8DB72796610700EAFEF7 /* Combine */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Combine;
-			sourceTree = "<group>";
-		};
 		C3D165E3274FD1B7000C74AB /* Styles */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				14193532279711AE006C67B3 /* GoogleService-Info.plist */,
-				140E8DB72796610700EAFEF7 /* Combine */,
 				C3D165E3274FD1B7000C74AB /* Styles */,
 				C3E3E24A274D182500215FA8 /* Model */,
 				C3E3E24B274D182D00215FA8 /* View */,
@@ -583,7 +575,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B637BE2R39;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -608,7 +600,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B637BE2R39;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -640,10 +632,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.woqomoqo.SveaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Svea;
+				TEST_TARGET_NAME = Flir;
 			};
 			name = Debug;
 		};
@@ -663,10 +656,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.woqomoqo.SveaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Svea;
+				TEST_TARGET_NAME = Flir;
 			};
 			name = Release;
 		};

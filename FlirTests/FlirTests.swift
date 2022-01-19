@@ -1,4 +1,4 @@
-@testable import Svea
+@testable import Flir
 import XCTest
 
 class FlirTests: XCTestCase {

@@ -1,12 +1,12 @@
 import Foundation
-@testable import Svea
+@testable import Flir
 import XCTest
 
-class PlacesDataTest: XCTestCase {
-    func testPlaceData() throws {
-        let url = "https://secure.closepayment.com/close-admin/1.0/place/meappid?meAppId=50&records=42"
+class ReposDataTest: XCTestCase {
+    func testRepoData() throws {
+        let url = "https://api.github.com/users?per_page=10"
         let session = URLSession(configuration: .default)
-        
+
         session.dataTask(with: URL(string: url)!) { data, _, err in
             if let error = err {
                 print(error.localizedDescription)
@@ -17,14 +17,14 @@ class PlacesDataTest: XCTestCase {
                 return
             }
             do {
-                // decoding API Data...
-                let places = try JSONDecoder().decode(APIPlaceData.self, from: APIData)
+                // Decoding API Data...
+                let repos = try JSONDecoder().decode([Repo].self, from: APIData)
                 
-                XCTAssertEqual("Testplats för MO", places.place[0].name)
-                XCTAssertEqual(places.place.count, places.total)
+                XCTAssertEqual("brynary", repos[1].login)
+                XCTAssertEqual(repos.count, 10)
                 
-                for i in places.place.indices {
-                    XCTAssertEqual("", places.place[i].website)
+                for i in repos.indices {
+                    XCTAssertEqual("", repos[i].html_url)
                 }
             }
             catch {
