@@ -1,5 +1,5 @@
-import Foundation
 @testable import Flir
+import Foundation
 import XCTest
 
 class ReposDataTest: XCTestCase {
@@ -19,10 +19,10 @@ class ReposDataTest: XCTestCase {
             do {
                 // Decoding API Data...
                 let repos = try JSONDecoder().decode([Repo].self, from: APIData)
-                
+
                 XCTAssertEqual("brynary", repos[1].login)
                 XCTAssertEqual(repos.count, 10)
-                
+
                 for i in repos.indices {
                     XCTAssertEqual("", repos[i].html_url)
                 }

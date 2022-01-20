@@ -47,17 +47,17 @@ struct ReposView: View {
                                 .background(colorTheme.gradient)
                                 .cornerRadius(20)
                                 .shadow(color: colorTheme.quaternaryColor, radius: 4)
-                            }
-                            .sheet(isPresented: $showRepoDetailModalView) {
-                                RepoDetailView(isPresented: $showRepoDetailModalView, selectionIndex: $selectionIndex)
-                            }
-                            .accessibility(identifier: "infoButton\(repoIndex)")
+                            }.accessibility(identifier: "infoButton\(String(repoIndex))")
+                                .sheet(isPresented: $showRepoDetailModalView) {
+                                    RepoDetailView(isPresented: $showRepoDetailModalView, selectionIndex: $selectionIndex)
+                                }
                         }
                     }
                     .padding()
                     Button("Logout") {
                         logoutViewModel.logoutUser()
                     }
+                    .accessibilityIdentifier("logoutButton")
                     .padding()
                     .frame(width: 100, height: 40, alignment: .center)
                     .background(colorTheme.primaryColor)
@@ -79,8 +79,8 @@ struct ReposView: View {
     }
 }
 
-//struct ReposView_Previews: PreviewProvider {
+// struct ReposView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        ReposView()
 //    }
-//}
+// }
